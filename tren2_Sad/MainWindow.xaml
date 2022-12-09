@@ -1,0 +1,31 @@
+﻿<Window x:Class="tren2_Sad.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:tren2_Sad"
+        mc:Ignorable="d"
+        Title="Попрыгунчик" Height="700" Width="900">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="200*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Background="#F9969E" Orientation="Horizontal">
+            <Image Source="Resources\Попрыженок.png" Margin="5"></Image>
+        </StackPanel>
+        <Button Name="btnBack" Click="btnBack_Click"
+            Width="150" Height="30" FontSize="17"
+            Foreground="#FFFFFF" Background="#43DCFE"
+            Margin="200 0 0 0" FontFamily="Tahoma" Grid.Row="0"
+                >Назад</Button>
+        <Button Name="BtnAdd" Click="BtnAdd_Click"
+                Width="150" Height="30" FontSize="17"
+            Foreground="#FFFFFF" Background="#43DCFE"
+            Margin="600 0 0 0" FontFamily="Tahoma" Grid.Row="0">Добавить</Button>
+        <StackPanel Grid.Row="1" VerticalAlignment="Center">
+            <Image Source="Resources\Попрыженок.png" Margin="5" Width="300" Opacity=".1"></Image>
+        </StackPanel>
+        <Frame ContentRendered="MainFrame_ContentRendered" Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden"></Frame>
+    </Grid>
+</Window>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="07186787a42d46038517382b9fcd312e" Name="Diagram1">
+        <EntityTypeShape EntityType="DataBase2Model.Agent" Width="1.5" PointX="3" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DataBase2Model.Employee" Width="1.5" PointX="3.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DataBase2Model.HistoryProvider" Width="1.5" PointX="9" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DataBase2Model.HistoryRemainder" Width="1.5" PointX="6" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DataBase2Model.Materials" Width="1.5" PointX="8.25" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DataBase2Model.Product" Width="1.5" PointX="0.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DataBase2Model.ProductDiscount" Width="1.5" PointX="5.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DataBase2Model.Production" Width="1.5" PointX="6" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="DataBase2Model.ProductSale" Width="1.5" PointX="3" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DataBase2Model.Provider" Width="1.5" PointX="11.25" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DataBase2Model.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DataBase2Model.TypeAgent" Width="1.5" PointX="5.25" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DataBase2Model.TypeProduct" Width="1.5" PointX="3" PointY="18" IsExpanded="true" />
+        <AssociationConnector Association="DataBase2Model.FK_Agent_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="DataBase2Model.FK_ProductDiscount_Agent" ManuallyRouted="false" />
+        <AssociationConnector Association="DataBase2Model.FK_TypeAgent_Agent" ManuallyRouted="false" />
+        <AssociationConnector Association="DataBase2Model.FK_Production_Employee1" ManuallyRouted="false" />
+        <AssociationConnector Association="DataBase2Model.FK_Provider_HistoryProvider1" ManuallyRouted="false" />
+        <AssociationConnector Association="DataBase2Model.FK_Materials_HistoryRemainder" ManuallyRouted="false" />
+        <AssociationConnector Association="DataBase2Model.FK_Materials_Production" ManuallyRouted="false" />
+        <AssociationConnector Association="DataBase2Model.FK_Production_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="DataBase2Model.FK_ProductSale_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="DataBase2Model.FK_TypeProduct_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="DataBase2Model.FK_Provider_Production" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
